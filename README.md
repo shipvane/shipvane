@@ -1,6 +1,6 @@
 # Shipvane
 
-**Ship your code, just point it the right direction.**
+**Ship your code, just point the way.**
 
 Shipvane turns a ticket into a merge-ready PR — and nothing ships off-course.
 Every change is driven by a **real CI gate** (it's not done until the build is

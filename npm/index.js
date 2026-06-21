@@ -1,4 +1,4 @@
 // Shipvane — name-reservation placeholder.
-// Ship your code, just point it the right direction.  https://shipvane.com
+// Ship your code, just point the way.  https://shipvane.com
 // The real CLI is coming soon.
 module.exports = {};

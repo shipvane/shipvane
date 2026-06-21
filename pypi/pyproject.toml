@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "shipvane"
 version = "0.0.1"
-description = "Ship your code, just point it the right direction. (Name reservation — Shipvane CLI coming soon.)"
+description = "Ship your code, just point the way. (Name reservation — Shipvane CLI coming soon.)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
