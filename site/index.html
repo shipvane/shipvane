@@ -199,7 +199,7 @@
       <div class="eyebrow">Early access</div>
       <h2>Be first aboard.</h2>
       <p class="lead">Shipvane is in early development. Join the waitlist and we'll reach out when it's ready to sail.</p>
-      <form id="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="waitlist-form" action="https://formspree.io/f/mbdvrvke" method="POST">
         <input type="email" name="email" placeholder="you@company.com" required autocomplete="email" />
         <button class="btn btn-dark" type="submit">Join the waitlist</button>
         <p class="msg ok" style="display:none;width:100%;color:var(--green-d);font-weight:700;margin-top:8px">Thanks — you're on the list. ⚓</p>
@@ -215,7 +215,7 @@
 
   <script>
     // Waitlist: submit via fetch so the page never navigates away.
-    // Swap YOUR_FORM_ID in the form action for a real endpoint (Formspree free tier).
+    // Posts to the Formspree endpoint set in the form action (free tier).
     (function () {
       var form = document.getElementById('waitlist-form');
       if (!form) return;
