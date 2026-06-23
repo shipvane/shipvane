@@ -36,8 +36,8 @@ environment and hand back code they can't truly verify. Shipvane is the opposite
 
 Engine speaks the **Model Context Protocol** and signs in over **OAuth**, so the
 Connect CLI is just one way in — you can also drive it straight from the AI
-assistant you already use. Working today in **Claude Desktop** and **Claude
-mobile**; ChatGPT and other MCP clients coming.
+client you already use. Working today in **Claude Code**, **Claude Desktop**, and
+**Claude mobile**; ChatGPT and other MCP clients coming.
 
 ## Where to find it
 - **Web:** https://shipvane.com
