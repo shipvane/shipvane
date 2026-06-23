@@ -1,7 +1,8 @@
-# Shipvane
+<p align="center">
+  <img src="brand/lockup-horizontal.png" alt="Shipvane — Ship your code, just point the way." width="440" />
+</p>
 
-**Ship your code, just point the way.**
-_Your code, your cloud, your call._
+<p align="center"><em>Your code, your cloud, your call.</em></p>
 
 Shipvane runs autonomous coding agents inside **your own cloud** — not a black box.
 You point it at a ticket; it works in a real checkout, proves the change against a
