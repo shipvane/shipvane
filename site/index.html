@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shipvane — Ship your code, just point the way</title>
-  <meta name="description" content="Shipvane turns a ticket into a merge-ready pull request. Nothing ships off-course: every change is driven by a real CI gate and your approval." />
+  <meta name="description" content="Shipvane runs autonomous coding agents inside your own cloud — turning a ticket into a merge-ready pull request, gated by a real CI build and your approval. No black box." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://shipvane.com/" />
   <meta name="theme-color" content="#0E2746" />
@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="Shipvane" />
   <meta property="og:url" content="https://shipvane.com/" />
   <meta property="og:title" content="Shipvane — Ship your code, just point the way" />
-  <meta property="og:description" content="Shipvane turns a ticket into a merge-ready pull request. Nothing ships off-course: every change is driven by a real CI gate and your approval." />
+  <meta property="og:description" content="Shipvane runs autonomous coding agents inside your own cloud — turning a ticket into a merge-ready pull request, gated by a real CI build and your approval. No black box." />
   <meta property="og:image" content="https://shipvane.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -23,7 +23,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Shipvane — Ship your code, just point the way" />
-  <meta name="twitter:description" content="Shipvane turns a ticket into a merge-ready pull request. Nothing ships off-course." />
+  <meta name="twitter:description" content="Autonomous coding agents that run in your own cloud — ticket to merge-ready PR, gated by real CI and your approval. No black box." />
   <meta name="twitter:image" content="https://shipvane.com/og-image.png" />
   <style>
     :root{
@@ -93,6 +93,18 @@
     .step p{color:var(--muted);font-size:14.5px}
     .step.green .n{background:linear-gradient(180deg,var(--green),var(--green-d));color:#04231a}
 
+    /* products */
+    .prods{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .prod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;
+      box-shadow:0 1px 2px rgba(14,39,70,.04)}
+    .prod .badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;
+      letter-spacing:.5px;text-transform:uppercase;color:var(--blue);background:rgba(42,92,156,.08);
+      border:1px solid rgba(42,92,156,.22);padding:5px 12px;border-radius:999px;margin-bottom:14px}
+    .prod h3{font-size:21px;margin-bottom:8px}
+    .prod p{color:var(--muted);font-size:15.5px}
+    .prod .soon{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;letter-spacing:.5px;
+      text-transform:uppercase;color:var(--green-d)}
+
     /* contract band */
     .band{background:linear-gradient(180deg,var(--navy),var(--navy2));color:#fff;border-radius:24px;
       padding:54px 40px;text-align:center;max-width:920px;margin:0 auto}
@@ -112,7 +124,7 @@
     footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
     footer .brand{color:var(--navy)}
     @media(max-width:760px){
-      .hero h1{font-size:38px}.grid,.steps{grid-template-columns:1fr}.nav-links{display:none}
+      .hero h1{font-size:38px}.grid,.steps,.prods{grid-template-columns:1fr}.nav-links{display:none}
       h2{font-size:30px}
     }
   </style>
@@ -121,8 +133,9 @@
   <nav><div class="wrap">
     <a class="brand" href="#"><img src="assets/logo.svg" alt=""/><span>ship<span class="v">vane</span></span></a>
     <div class="nav-links">
-      <a href="#how">How it works</a>
       <a href="#why">Why Shipvane</a>
+      <a href="#how">How it works</a>
+      <a href="#products">Connect &amp; Engine</a>
       <a href="https://github.com/shipvane">GitHub</a>
       <a class="btn btn-green" href="#waitlist" style="padding:9px 16px">Join waitlist</a>
     </div>
@@ -131,10 +144,10 @@
   <header class="hero">
     <div class="wrap">
       <img class="emblem" src="assets/logo.svg" alt="Shipvane"/>
-      <div class="pill">From ticket to merge-ready PR</div>
+      <div class="pill">Your code · Your cloud · Your call</div>
       <h1>Ship your code,<br/><span class="g">just point the way.</span></h1>
-      <p class="sub">Shipvane turns a ticket into a merge-ready pull request — and nothing ships
-        off-course. Every change is driven by a <strong>real CI gate</strong> and <strong>your approval</strong>.</p>
+      <p class="sub">Autonomous coding agents that run in <strong>your own cloud</strong> — not a black box.
+        Shipvane turns a ticket into a merge-ready PR, gated by a <strong>real CI build</strong> and <strong>your approval</strong>.</p>
       <div class="cta">
         <a class="btn btn-green" href="#waitlist">Join the waitlist →</a>
         <a class="btn btn-ghost" href="https://github.com/shipvane">View on GitHub</a>
@@ -145,21 +158,24 @@
   <section class="block" id="why">
     <div class="wrap">
       <div class="eyebrow">The difference</div>
-      <h2>Blind AI codegen ships broken code.</h2>
-      <p class="lead">Most AI coding tools generate code they can never run. Shipvane works in a real
-        checkout and proves its work against your actual build.</p>
+      <h2>Your code, your cloud, your call.</h2>
+      <p class="lead">Black-box SaaS agents run your codebase in someone else's opaque environment and
+        hand back code they can't truly verify. Shipvane runs in <strong>your</strong> cloud and proves
+        its work against <strong>your</strong> actual build.</p>
       <div class="grid">
         <div class="card bad">
-          <div class="tag">Without Shipvane</div>
-          <h3>Generated, not verified</h3>
-          <p>The model writes files it can't execute, guesses at your conventions, and hands you a PR
-            that may not even compile. You become the build server.</p>
+          <div class="tag">Black-box SaaS agents</div>
+          <h3>Hand it over and hope</h3>
+          <p>Your repo runs inside a vendor's sealed environment you can't see or control. The model
+            generates code it never truly runs, guesses at your conventions, and hands you a PR that may
+            not even compile.</p>
         </div>
         <div class="card good">
-          <div class="tag">With Shipvane</div>
-          <h3>Implemented, then proven</h3>
-          <p>Shipvane edits a real branch, runs your real build &amp; tests, reads the actual errors, and
-            iterates until the gate is green. It isn't done until CI passes.</p>
+          <div class="tag">Shipvane</div>
+          <h3>Owned, then proven</h3>
+          <p>Shipvane runs agentic AI inside <strong>your own AWS account</strong> — a real branch, your
+            real build &amp; tests. It reads the actual errors and iterates until the gate is green.
+            Nothing leaves your environment; nothing merges without your say.</p>
         </div>
       </div>
     </div>
@@ -172,9 +188,36 @@
       <p class="lead">You set the direction. Shipvane handles the voyage — and you hold the final say.</p>
       <div class="steps">
         <div class="step"><div class="n">1</div><h4>Point at a ticket</h4><p>Hand Shipvane a Jira ticket. It reads the repo and plans the change.</p></div>
-        <div class="step"><div class="n">2</div><h4>It implements</h4><p>Edits a real branch in a fresh checkout, grounded in your conventions.</p></div>
+        <div class="step"><div class="n">2</div><h4>It implements</h4><p>Edits a real branch in a fresh checkout in your cloud, grounded in your conventions.</p></div>
         <div class="step"><div class="n">3</div><h4>Real CI gate</h4><p>Runs your actual build &amp; tests, fixing failures until the gate is green.</p></div>
         <div class="step green"><div class="n">✓</div><h4>Merge-ready PR</h4><p>A clean, passing pull request lands for your review. You approve; it merges.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="products">
+    <div class="wrap">
+      <div class="eyebrow">Two pieces, one workflow</div>
+      <h2>Connect points the way. Engine does the work.</h2>
+      <p class="lead">Shipvane is an open, self-hostable stack — a CLI you drive from your terminal and an
+        agent runtime that lives in your cloud. No SaaS tenancy, no lock-in.</p>
+      <div class="prods">
+        <div class="prod">
+          <div class="badge">Shipvane Connect · CLI</div>
+          <h3>Your terminal, your control surface</h3>
+          <p>Connect is the command-line client you point at a ticket. It hands the work to your Engine,
+            streams progress back, and keeps you in the loop on every approval — all without leaving the
+            shell you already live in.</p>
+          <span class="soon">In development</span>
+        </div>
+        <div class="prod">
+          <div class="badge">Shipvane Engine · Runtime</div>
+          <h3>The agent runtime, in your cloud</h3>
+          <p>Engine is the agentic core, packaged to deploy and provision into your own AWS account. It
+            runs the real checkout, build, and CI loop where your code already lives — so you own the
+            environment, the logs, and the keys.</p>
+          <span class="soon">In development</span>
+        </div>
       </div>
     </div>
   </section>
@@ -186,6 +229,7 @@
         <h2>Nothing ships off-course.</h2>
         <p>Shipvane is built on one promise: code only moves forward when it's earned the right to.</p>
         <div class="row">
+          <div><span class="dot"></span> Runs in your own cloud</div>
           <div><span class="dot"></span> Green CI, every time</div>
           <div><span class="dot"></span> Your approval to merge</div>
           <div><span class="dot"></span> Ephemeral, per-ticket runs</div>
